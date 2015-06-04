@@ -3,11 +3,32 @@
 <head>
 		<title>Style Guide</title>
 		<link rel="stylesheet" href="css/style.css">
+		
+
 		<!--jQUERY-->
 		<link rel="stylesheet" href="css/jquery-ui.css">
+		<!--loads css for codemirror-->
+		<link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+		<!--load the blackboard css theme for the code area-->
+		<link rel="stylesheet" href="bower_components/codemirror/theme/blackboard.css">
+
 	  	<script src="js/jquery-1.10.2.js"></script>
 	  	<script src="js/jquery-ui.js"></script>
-	  	<script type="text/javascript" src="js/jquery.zclip.js"></script>
+
+	  	<!--load handlebars.js for client side templating-->
+	  	<script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
+
+		<!--load the js for codemirror-->
+	  	<script src="bower_components/codemirror/lib/codemirror.js"></script>
+	  	<!--loads up the syntax highlighters for html mode-->
+	  	<script src="bower_components/codemirror/mode/xml/xml.js"></script>
+	  	<script src="bower_components/codemirror/mode/css/css.js"></script>
+	  	<script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
+	  	<script src="bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+	  	<!--loads up the syntax highlighters for html mode-->
+
+
+
 	  	<script src="js/list.js"></script>
 	  	<style>
 	  	#resizable { width: 150px; height: 150px; padding: 0.5em; }
@@ -139,7 +160,7 @@
 						<div class="toggle first active">HTML</div>
 						<div class="toggle last">CSS</div>
 					</div>
-					<div class="codecase">hello</div>
+					<div id="code-area-one" class="codecase"></div>
 				</div>
 				<!--COMPONENT ENDS-->
 
@@ -1595,6 +1616,24 @@
 	</div>
 </body>
 
+
+
+<!--this is a handlebars template. You can giv it an id to load a large string in to javascript.-->
+<!--if you change the code in here it will reflect as changed in your codemirror instance -->
+<script id="hb-code-area-one" type="text/x-handlebars-template">
+  <div class="text">
+  	<h1>Hello World.</h1>
+  </div>
+
+
+  <!--Check line 1623 in your web-universal.html to change what gets loaded in this code area. -->
+</script>
+
+<!-- you can make more code areas by making more handlebars templates ad instantiating new divs as codemirror instances.-->
+
+
+
+
 <script>
 	(function() {
     if (document.location.hash) {
@@ -1643,5 +1682,30 @@ $("#count").html(""+count);
 
 
 </script>
+
+
+<!--just putting code mirror stuff down here for convenience-->
+<script type="text/javascript" >
+
+  //grab the code from the handlebar template
+  var source   = $("#hb-code-area-one").html();
+  //compile for use in javascript
+  var template = Handlebars.compile(source);
+  //I am passing 'no':'data', but you could pass variable in to the template if needed. You don't need it in this case. 
+  //see more  at http://handlebarsjs.com/
+  var yourCodeSample = template({'no':'data'})
+
+  var options = {
+            lineNumbers: true,
+            lineWrapping: true,
+            theme: "blackboard",
+            mode: "htmlmixed",
+            //this is where we are inserting the code sample , from the handlbars template, in to the actual editor instance.
+            value: yourCodeSample
+        }
+  var editor = CodeMirror(document.getElementById("code-area-one"), options);
+
+</script>
+
 
 </html>
