@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Style Guide</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!--jQUERY-->
+		<link rel="stylesheet" href="css/jquery-ui.css">
+	  	<script src="js/jquery-1.10.2.js"></script>
+	  	<script src="js/jquery-ui.js"></script>
+	  	<script type="text/javascript" src="js/jquery.zclip.js"></script>
+	  	<script src="js/list.js"></script>
+	  	<style>
+	  	#resizable { width: 150px; height: 150px; padding: 0.5em; }
+	  	#resizable h3 { text-align: center; margin: 0; }
+	  	</style>
+	  	<script>
+	  	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<a href="home.html"><div class="home">Style Guide</div></a>
+			<div class="home no-border">Universal Web, Web</div>
+			<a href="#"><div class="signin">Sign in</div></a>
+			<input type="text" id="inpSearch" class="search" placeholder="Search everything here...">
+			<!--<div id="count"></div>-->
+		</div>
+	</div>
+	<div class="container searchable">
+		<div class="banner start dim">
+			<h1>Universal Web Design Standards</h1>
+			<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+		</div>
+		<div class="banner start">
+			<h2 class="dim">Component Styles</h2>
+			<div class="sub-menu searchable-content">
+			<nav>
+		        <ul class="list-styles">
+		            <li>
+		                <a href="#"><h3 id="list-titles" class="sub-menu-lg">Layouts</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li id="list-titles" class="sub-menu-sm">Grid Systems</li></a>
+		                    <a href="#"><li id="list-titles" class="sub-menu-sm">Cards</li></a>
+		                    <a href="#"><li id="list-titles" class="sub-menu-sm">Lists</li></a>
+		                    <a href="#"><li id="list-titles" class="sub-menu-sm">Feeds</li></a>
+		                    <a href="#"><li id="list-titles" class="sub-menu-sm">Tables</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Navigation</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Headers</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Footers</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Buttons</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Tabs</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pagination</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pills</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Breadcrumbs</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Overlays</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Modals</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pop-overs</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Graphs & Charts</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Bar Graphs</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Line Graphs</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pie Charts</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Chart Legends</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Progress Bar Chart</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Colors</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Brand/Primary</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Secondary</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Tertiary</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Neutral</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Typography & Iconography</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Fonts</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Sizes & Weights</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Iconongraphy</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Form Elements</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Text Areas</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Checkboxes</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Radio Buttons</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Dropdowns</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Date Pickers</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Input Labels</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Focused Inputs</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Input Errors</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Submit/Cancel Buttons</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Messaging</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Persistent Alerts</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Basic Alerts</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Toast Messages</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Emails</li></a>
+		                    <a href="#"><li class="sub-menu-sm">User Badges</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Labels</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Tool-tips</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Loading Animations</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Images</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Avatars</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Background Images</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Content Images</li></a>
+		                </ul>
+		            </li>
+		        </ul>
+			</nav>
+			</div>
+
+		<!--LAYOUTS BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="layouts" class="hide-on-search"><h2>Layouts <span class="icon-link">A</span></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="grids"><h3>Grids <span class="icon-link">A </span><span class="number">(#UWC-001) </span></h3></a>
+						<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">Hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+
+				<!--COMPONENT BEGINS-->
+				<div class="component june">
+					<a id="cards"><h3>Cards <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="lists"><h3>Lists <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+
+				<!--COMPONENT BEGINS-->
+				<div class="component june">
+					<a id="feeds"><h3>Feeds <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+						<!--SHOWCASE-->
+						<div class="showcase">hello</div>
+						<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="tables"><h3>Tables <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--LAYOUTS ENDS-->
+		<!--NAVIGATION BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="navigation" class="hide-on-search"><h2>Navigation <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="headers"><h3>Headers <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="footers"><h3>Footers <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="buttons"><h3>Buttons <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+						<!--SHOWCASE-->
+						<div class="showcase">hello</div>
+						<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="tabs"><h3>Tabs <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pagination"><h3>Pagination <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pills"><h3>Pills <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="breadcrumbs"><h3>Breadcrumbs <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+
+			</div>
+			</div>
+		<!--NAVIGATION ENDS-->
+		<!--OVERLAYS BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="overlays" class="hide-on-search"><h2>Overlays <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="modals"><h3>Modals <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pop-overs"><h3>Pop-overs <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--OVERLAYS ENDS-->
+		<!--GRAPHS & CHARTS BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="graphs-charts" class="hide-on-search"><h2>Graphs & Charts <span class="icon-link">A</span></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="bar-graphs"><h3>Bar Graphs <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="line-graphs"><h3>Line Graphs <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pie-charts"><h3>Pie Charts <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="chart-legends"><h3>Chart Legends <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="progress-bar-charts"><h3>Progress Bar Charts <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--GRAPHS & CHARTS ENDS-->
+		<!--COLORS BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="colors" class="hide-on-search"><h2>Colors <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="brand-colors"><h3>Brand/Primary <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="secondary-colors"><h3>Secondary <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="tertiary-colors"><h3>Tertiary <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="neutral-colors"><h3>Neutral <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--COLORS ENDS-->
+		<!--TYPOGRAPHY & ICONOGRAPHY BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="typography-iconography" class="hide-on-search"><h2>Typography & Iconography <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="fonts"><h3>Fonts <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="sizes-weights"><h3>Sizes & Weights <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="iconography"><h3>Iconongraphy <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				
+			</div>
+
+		<!--TYPOGRAPHY & ICONOGRAPHY ENDS-->
+		<!--FORM ELEMENTS BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="form-elements" class="hide-on-search"><h2>Form Elements <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="text-areas"><h3>Text Areas <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="checkboxes"><h3>Checkboxes <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="radio-buttons"><h3>Radio Buttons <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="dropdowns"><h3>Dropdowns <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="date-pickers"><h3>Date Pickers <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="input-labels"><h3>Input Labels <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="focused-inputs"><h3>Focused Inputs <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="input-errors"><h3>Input Errors <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="submit-cancel-buttons"><h3>Submit/Cancel Buttons <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--FORM ELEMENTS ENDS-->
+		<!--MESSAGING BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="messaging" class="hide-on-search"><h2>Messaging <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="persistent-alerts"><h3>Persistent Alerts <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="basic-alerts"><h3>Basic Alerts <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="toast-messages"><h3>Toast Messages <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="emails"><h3>Emails <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="user-badges"><h3>User Badges <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="labels"><h3>Labels <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="tool-tips"><h3>Tool-tips <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					
+					<!--SHOWCASE-->
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="loading-animations"><h3>Loading Animations <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--FORM ELEMENTS ENDS-->
+		<!--IMAGES BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="images" class="hide-on-search"><h2>Images <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="avatars"><h3>Avatars <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+					
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="background-images"><h3>Background images <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="content-images"><h3>Content Images <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				
+			</div>
+
+		<!--IMAGES ENDS-->
+
+	<!--COMPONENTS ENDS-->
+	<!--PATTERNS BEGINS-->
+
+			<div>
+			<h2 class="hide-on-search">Patterns</h2>
+			<div class="sub-menu hide-on-search">
+				<nav>
+		        <ul class="list-styles">
+		            <li>
+		                <a href="#"><h3 class="sub-menu-lg">Top</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Title</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Content</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Widget</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                </ul>
+		                <a href="#"><h3 class="sub-menu-lg">Bottom</h3></a>
+		                <ul class="sub-list-styles">
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                    <a href="#"><li class="sub-menu-sm">Pattern name</li></a>
+		                </ul>
+		            </li>
+		        </ul>
+			</nav>
+			</div>
+
+		<!--TOPS BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="top-patterns" class="hide-on-search"><h2>Top Patterns <span class="icon-link">A</span></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+				<div class="component june">
+					<a id="pattern1"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern2"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--TOPS ENDS-->
+		<!--TITLES BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="title-patterns" class="hide-on-search"><h2>Title Patterns <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern3"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern4"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--TITLES ENDS-->
+		<!--CONTENT BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="content-patterns" class="hide-on-search"><h2>Content Patterns <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern5"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern6"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--CONTENT ENDS-->
+		<!--WIDGET BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="widget-patterns" class="hide-on-search"><h2>Widget Patterns <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern7"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern8"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--WIDGET ENDS-->
+		<!--BOTTOM BEGINS-->
+
+			<div class="component-contents searchable">
+				<a id="bottom-patterns>" class="hide-on-search"><h2>Bottom Patterns <span class="icon-link">A</span></h3></h2></a>
+				
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern9"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+				<!--COMPONENT ENDS-->
+				<!--COMPONENT BEGINS-->
+
+				<div class="component june">
+					<a id="pattern10"><h3>Pattern name <span class="icon-link">A</span></h3></a>
+					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
+
+					<!--SHOWCASE-->
+					<div class="sample-title">Examples</div>
+					<div class="toggle-container">
+						<div class="toggle first active">Mobile</div>
+						<div class="toggle middle">Tablet</div>
+						<div class="toggle last">Desktop</div>
+					</div>
+					<div class="showcase">hello</div>
+					
+					<!--CODECASE-->
+					<div class="sample-title">Code</div>
+					<div class="toggle-container">
+						<div class="toggle first active">HTML</div>
+						<div class="toggle last">CSS</div>
+					</div>
+					<div class="codecase">hello</div>
+				</div>
+
+				<!--COMPONENT ENDS-->
+
+			</div>
+
+		<!--BOTTOM ENDS-->
+
+	<!--PATTERNS ENDS-->
+			
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+
+<script>
+	(function() {
+    if (document.location.hash) {
+        setTimeout(function() {
+            window.scrollTo(window.scrollX, window.scrollY - 130);
+        }, 10);
+    }
+})();
+
+jQuery.expr[':'].Contains = function(a, i, m) { 
+  return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0; 
+};
+jQuery.expr[':'].contains = function(a, i, m) { 
+  return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0; 
+};
+    $('.searchable .june').not(".search").show();
+$('#inpSearch').on('keyup',function(){
+    $('.searchable .june').not(".search").show();
+    var val = this.value;
+    val = val.split(" ");
+    var contains="";
+    for(var i = 0; i < val.length;i++){
+        contains.length >0?contains+=",div":"";
+        contains+=":contains('"+val[i]+"')";
+        console.log(contains);
+    }
+    console.log(val);
+    if (val[0].length > 0) {
+    $('.searchable .june').hide();
+    $('.searchable .june'+contains).show();
+    $('.sub-menu').css('opacity','.3');
+    $('.dim').css('opacity','.3');
+    $('.hide-on-search').css('display','none');
+    $('.component-contents').css('margin-bottom','0');
+    } else {
+        $('.searchable .june').show();
+        $('.sub-menu').css('opacity','1.0');
+        $('.dim').css('opacity','1.0');
+        $('.hide-on-search').css('display','block');
+        $('.component-contents').css('margin-bottom','115px');
+    }
+});
+
+var count = $(".june:visible").length;
+$("#count").html(""+count);
+
+
+</script>
+
+</html>
