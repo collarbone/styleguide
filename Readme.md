@@ -26,8 +26,14 @@ Now make sure you are in the project's directory and run `pip install -r requirm
 
 run the following commands from the project directory:
 
-`workon styleguide`
-`python app.py` 
+```
+workon styleguide
+```
+
+
+```
+python app.py
+``` 
 
 
 That will run the server and you can visit the application in the browser at `http://localhost:5000`
