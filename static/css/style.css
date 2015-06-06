@@ -321,9 +321,27 @@ textarea, input { outline: none; }
 }
 
 
+.icon-link {
+    font-family: Styles;
+    font-size: .75em;
+    color: #ccc;
+    opacity: .2;
+    -webkit-font-smoothing: antialiased;
+  }
 
+.icon-link.zeroclipboard-is-hover { 
+    color: #546FB5;
+    cursor: pointer;
+    opacity: 1.0; 
+}
 
+.icon-link.zeroclipboard-is-hover:hover{
+  cursor: pointer;
+}
 
+.icon-link.zeroclipboard-is-active { 
+  color: #ccc; 
+}
 
 
 

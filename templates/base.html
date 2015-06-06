@@ -2,39 +2,39 @@
 <html>
 <head>
 		<title>Style Guide</title>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 		
 
 		<!--jQUERY-->
-		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
 		<!--loads css for codemirror-->
-		<link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bower_components/codemirror/lib/codemirror.css') }}">
 		<!--load the blackboard css theme for the code area-->
-		<link rel="stylesheet" href="bower_components/codemirror/theme/blackboard.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bower_components/codemirror/theme/blackboard.css') }}">
 
-	  	<script src="js/jquery-1.10.2.js"></script>
-	  	<script src="js/jquery-ui.js"></script>
+	  	<script src="{{ url_for('static', filename='js/jquery-1.10.2.js') }}"></script>
+	  	<script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
 
 	  	<!--load handlebars.js for client side templating-->
-	  	<script type="text/javascript" src="bower_components/handlebars/handlebars.js"></script>
+	  	<script type="text/javascript" src="{{ url_for('static', filename='bower_components/handlebars/handlebars.js') }}"></script>
 
 		<!--load the js for codemirror-->
-	  	<script src="bower_components/codemirror/lib/codemirror.js"></script>
+	  	<script src="{{ url_for('static', filename='bower_components/codemirror/lib/codemirror.js') }}"></script>
 	  	<!--loads up the syntax highlighters for html mode-->
-	  	<script src="bower_components/codemirror/mode/xml/xml.js"></script>
-	  	<script src="bower_components/codemirror/mode/css/css.js"></script>
-	  	<script src="bower_components/codemirror/mode/javascript/javascript.js"></script>
-	  	<script src="bower_components/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+	  	<script src="{{ url_for('static', filename='bower_components/codemirror/mode/xml/xml.js') }}"></script>
+	  	<script src="{{ url_for('static', filename='bower_components/codemirror/mode/css/css.js') }}"></script>
+	  	<script src="{{ url_for('static', filename='bower_components/codemirror/mode/javascript/javascript.js') }}"></script>
+	  	<script src="{{ url_for('static', filename='bower_components/codemirror/mode/htmlmixed/htmlmixed.js') }}"></script>
 	  	<!--loads up the syntax highlighters for html mode-->
 
 	  	<!--loads zero clipboard-->
-	  	<script type="text/javascript" src="js/ZeroClipboard.js"></script>
-	  	https://s3.amazonaws.com/poker-ft/ZeroClipboard.swf
+	  	<script type="text/javascript" src="{{ url_for('static', filename='js/ZeroClipboard.js') }}"></script>
+	  	
 	  	<script type="text/javascript">
-	  	ZeroClipboard.config( { swfPath: "https://s3.amazonaws.com/poker-ft/ZeroClipboard.swf" } );
+	  	ZeroClipboard.config( { swfPath: "{{ url_for('static', filename='js/ZeroClipboard.swf') }}" } );
 	  	</script>
 
-	  	<script src="js/list.js"></script>
+	  	<script src="{{ url_for('static', filename='js/list.js') }}"></script>
 
 	  	<style>
 	  	#resizable { width: 150px; height: 150px; padding: 0.5em; }
@@ -145,10 +145,10 @@
 			</div>
 
 		<!--LAYOUTS BEGINS-->
-
+			<span id="layouts-anchor"></span>
 			<div class="component-contents searchable">
 				<a id="layouts" class="hide-on-search ">
-					<h2>Layouts <button class="icon-link">A</button>
+					<h2 >Layouts <span data-clipboard-text="{{request.host}}{{request.path}}#layouts-anchor" class="icon-link">A</span>
 					</h2>
 				</a>
 				
@@ -200,7 +200,14 @@
 				<!--COMPONENT BEGINS-->
 
 				<div class="component june">
-					<a id="lists"><h3>Lists <span class="icon-link">A</span></h3></a>
+
+					<span id="lists-anchor"></span>
+					<a id="lists">
+						<h3>Lists 
+							<span class="icon-link">A</span>
+						</h3>
+					</a>
+					
 					<p>This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes. This is where the description goes.</p>
 					<div class="sample-title">Examples</div>
 					<div class="toggle-container">
@@ -1716,18 +1723,20 @@ $("#count").html(""+count);
             //this is where we are inserting the code sample , from the handlbars template, in to the actual editor instance.
             value: yourCodeSample
         }
+
   var editor = CodeMirror(document.getElementById("code-area-one"), options);
 
 
-$(document).ready(function() {
+
+
+
 	var client = new ZeroClipboard($(".icon-link") );
 
 	client.on( "ready", function( readyEvent ) {
-	  alert( "ZeroClipboard SWF is ready!" );
-
+	  console.log("zero clip board is ready");
 	});
 
-});
+
 
 
 </script>
