@@ -16,7 +16,19 @@ you should see "(styleguide)" in your terminal, mine looks like this:
 (styleguide)spencers-mbp:styleguide spencercooley$
 
 
+To work on this project in the future you will need to type `workon styleguide` to activate the virtualenv. 
+
+
 Now make sure you are in the project's directory and run `pip install -r requirments.txt`  this will install the python dependencies that are listed in the requirments.txt file. 
+
+
+### Starting the web server
+
+to start the web server just make sure you are in the project directory then run `python app.py` 
+
+That will run the server and you can visit the application in the browser at `http://localhost:5000`
+
+
 
 
 
