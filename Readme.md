@@ -9,7 +9,7 @@ to set up this environment to work locally you will need a few things.
  - virtualenvwrapper https://virtualenvwrapper.readthedocs.org/en/latest/install.html
 
 
-once you have that you can install you need to make a virtualenv from the command line `mkvirtualenv styleguide` . You can do this from any directory. 
+once you have all that installed you need to make a virtualenv from the command line `mkvirtualenv styleguide` . You can do this from any directory. 
 
 you should see "(styleguide)" in your terminal, mine looks like this: 
 
@@ -24,7 +24,11 @@ Now make sure you are in the project's directory and run `pip install -r requirm
 
 ### Starting the web server
 
-to start the web server just make sure you are in the project directory then run `python app.py` 
+run the following commands from the project directory:
+
+`workon styleguide`
+`python app.py` 
+
 
 That will run the server and you can visit the application in the browser at `http://localhost:5000`
 
